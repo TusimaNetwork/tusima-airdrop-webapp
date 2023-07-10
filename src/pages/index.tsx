@@ -42,14 +42,7 @@ const Home: NextPage = () => {
   },[])
   const [proof,airDrop] = useMemo(() => {
     if (address &&  tokens) {
-      console.log({address , tokens})
-      // const merkletree = new MerkleTree(
-      //   tokens.map(hashToken),
-      //   keccak256,
-      //   { sortPairs: true }
-      // )
       const merkletree = StandardMerkleTree.load(tokens); 
-      // console.log({root:merkletree.getHexRoot().toString()})
       var deployerProof=null;
       var airdrop = null
       for (const [i, v] of merkletree.entries()) {
@@ -145,9 +138,6 @@ const Home: NextPage = () => {
           <p><span>Tusima DAO</span> & <span>Collab.Land</span></p>
         </HeadBigTitle>
         <Spaced size='60' />
-        {/* <HeadSubTitle>
-          Check your eligibility to claim $COLLAB
-        </HeadSubTitle> */}
          <HeadTimeTitle>
          <ShowTimeBox>
           <div>
