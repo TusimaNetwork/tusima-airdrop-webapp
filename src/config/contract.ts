@@ -5,6 +5,6 @@ export const claimed_contract:{
   address:any,
   abi:any
 } = {
-  address: "0xd6E080e55CFE5952C0D260C07E9E921C5934db23",
+  address: "0x439c567fb4EE6160192B47E157042aeA825c2cB5",
   abi: arbDrop,
 }
