@@ -35,7 +35,7 @@ const Home: NextPage = () => {
   
 
   const fetchTokens=useCallback(async()=>{
-   fetch('https://raw.githubusercontent.com/TusimaNetwork/tusima-airdrop-merkledata/test/airdrop.json').then(res=>res.json()).then(setTokens)
+   fetch('https://raw.githubusercontent.com/TusimaNetwork/tusima-airdrop-merkledata/main/airDrop.json').then(res=>res.json()).then(setTokens)
   },[])
   useEffect(()=>{
     fetchTokens().catch(console.log)
