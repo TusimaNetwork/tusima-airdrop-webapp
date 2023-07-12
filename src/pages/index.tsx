@@ -109,7 +109,7 @@ const Home: NextPage = () => {
       tipArr = ['Claimed', `You have claimed  <span>${formatUnits(airDrop.amount,18)}</span> $COLLAB`]
     } else if (isEnd) {
       //有领取资格，已过期
-      tipArr = ['Claim', 'Overtime cannot be claimed']
+      tipArr = ['Claim', 'Claim expired']
     } else {
       tipArr = ['Claim', `You can claim <span>${formatUnits(airDrop.amount,18)}</span> $COLLAB`]
     } 
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
         </HeadTimeTitle>
         <Spaced size='25'/>
         <HeadSubTitle>
-        After the wallet is linked, airdrop will be automatically checked 
+        Once the wallet is connected, the airdrop eligibility will be automatically verified.
         </HeadSubTitle>
         
         <Spaced size='60' />
@@ -177,7 +177,7 @@ const Home: NextPage = () => {
         Step<span>2</span>: Connect your Discord account on the <Link href={'https://testnet.tusima.network/tdao'} target='_blank'>Tusima testnet </Link>
         </HeadSubMinItem>
         <HeadSubMinItem>
-        Step<span>3</span>: Please be patient for a day
+        Step<span>3</span>: Please wait for one day and retry.
         </HeadSubMinItem>
           </TipsItem>
         </TipsBox>

@@ -8,7 +8,7 @@ import {
 } from "@rainbow-me/rainbowkit"
 
 import {
-  optimismGoerli
+  optimism
 } from "wagmi/chains"
 
 import { publicProvider } from "wagmi/providers/public"
@@ -16,7 +16,7 @@ import '../styles/globals.css'
 import "@rainbow-me/rainbowkit/styles.css"
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [optimismGoerli],
+  [optimism],
   [publicProvider()]
 )
 
