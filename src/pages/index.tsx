@@ -101,7 +101,7 @@ const Home: NextPage = () => {
       tipArr = ['Error Network']
     } else if (!airDrop) {
       //用户没领取资格
-      tipArr = ['No eligible', 'This wallet isn’t eligible']
+      tipArr = ['No eligible', 'This wallet isn\'t eligible']
     } else if (!isStart) {
       //有领取资格，没到开始时间
       tipArr = ['Claimed', `You can claim  <span>${formatUnits(airDrop.amount,18)}</span> $COLLAB`]
